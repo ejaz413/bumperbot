@@ -20,6 +20,11 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
+            'simple_publisher = bumperbot_py.simple_publisher:main',
+            'simple_subscriber = bumperbot_py.simple_subscriber:main',
+            'simple_lifecycle_node = bumperbot_py.simple_lifecycle_node:main',
+            'simple_qos_publisher = bumperbot_py.simple_qos_publisher:main',
+            'simple_qos_subscriber = bumperbot_py.simple_qos_subscriber:main',
         ],
     },
 )
