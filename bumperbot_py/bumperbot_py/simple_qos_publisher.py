@@ -46,7 +46,7 @@ class SimpleQosPublisher(Node):
         self.pub_ = self.create_publisher(String, "chatter", self.qos_profile_pub)
         self.counter_ = 0
         self.frequency_ = 1.0
-        self.get_logger("Publishing at %d Hz" %self.frequency_)
+        self.get_logger().info("Publishing at %d Hz" % self.frequency_)
         self.timer_ = self.create_timer(self.frequency_, self.timerCallback)
 
     def timerCallback(self):
